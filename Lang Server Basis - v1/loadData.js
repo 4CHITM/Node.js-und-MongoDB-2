@@ -3,8 +3,7 @@ require('./db/connect');
 require('colors');
 const { Dog } = require('./schemas/index.js');
 
-const dogsJson = JSON.parse(fs.readFileSync('./model/dogs.json', 'utf8'));
-console.log(dogsJson);
+const dogsJson = JSON.parse(fs.readFileSync('./model/dogs_wrong.json', 'utf8'));
 
 (async () => {
   try {
